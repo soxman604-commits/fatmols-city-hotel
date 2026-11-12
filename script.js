@@ -5,7 +5,7 @@
    Sources for the current values (checked 2 Oct 2026):
    - phone +260 765 206420: fatmolshotels.com contact block + Google Maps
      listing "Fatmols City Hotels"  -> CONFIRM it reaches the Ndola branch
-   - whatsapp: PROVISIONAL, same number; not confirmed as a WhatsApp line
+   - whatsapp: +260 976 658 622, provided by the site owner (12 Nov 2026)
    - address: Booking.com + Google Maps listing
    - check-in/out times: Booking.com listing -> CONFIRM
    - email: none confirmed for this branch (fatmolshotels.com shows
@@ -16,9 +16,10 @@
 const CONFIG = {
   hotelName: "Fatmols City Hotel",
   phones: [
+    { display: "+260 976 658 622", tel: "+260976658622" },
     { display: "+260 765 206 420", tel: "+260765206420" }
   ],
-  whatsapp: "260765206420",            // digits only, international format (provisional)
+  whatsapp: "260976658622",            // digits only, international format (set by owner 12 Nov 2026)
   email: "",                           // e.g. "reservations@fatmolshotels.com"
   address: "Plot 36213, Kitwe Road (Ndola–Kitwe dual carriageway), opposite Levy Mwanawasa Stadium, Ndola, Zambia",
   mapQuery: "-12.969644,28.613599",    // Google Maps listing coordinates
