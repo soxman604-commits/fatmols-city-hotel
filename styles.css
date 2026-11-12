@@ -168,3 +168,88 @@ ul{list-style:none}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
 .split>*,.row2>*,.form>*{min-width:0}
 .form input[type=date]{-webkit-appearance:none;appearance:none}
+
+/* example price flag */
+.example-flag{display:inline-block;margin-left:.35rem;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#a07a2c;background:#f7f2e8;border:1px solid #e6d7b0;border-radius:999px;padding:.12rem .45rem;vertical-align:middle}
+.rate{display:flex;flex-wrap:wrap;align-items:center;gap:.15rem .25rem;line-height:1.3}
+
+/* direct booking */
+.demo-banner{background:#fff6d8;border:1.5px solid var(--gold);color:var(--navy-d);font-weight:700;text-align:center;padding:.9rem 1.1rem;border-radius:12px;margin-bottom:1.8rem;box-shadow:0 4px 16px rgba(212,169,78,.18)}
+.booking-layout{display:grid;gap:2rem;align-items:start}
+@media(min-width:900px){.booking-layout{grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:2.6rem}}
+.book-summary{margin-top:1.2rem;background:var(--navy);color:#e3e7ef;border-radius:var(--r);padding:1.25rem 1.3rem;box-shadow:var(--shadow)}
+.book-summary h3{color:#fff;margin-bottom:.7rem}
+.book-summary-empty{color:#c8cedb;font-size:.95rem}
+.book-summary-details{display:grid;gap:.55rem}
+.book-summary-details div{display:flex;justify-content:space-between;gap:1rem;padding:.45rem 0;border-bottom:1px solid #ffffff1a}
+.book-summary-details div:last-of-type{border-bottom:0}
+.book-summary-details dt{color:#c8cedb;font-weight:600}
+.book-summary-details dd{font-weight:700;color:#fff;text-align:right}
+.book-summary-details .is-total{border-top:1px solid #ffffff33;border-bottom:0;padding-top:.7rem;margin-top:.2rem}
+.book-summary-details .is-total dt,.book-summary-details .is-total dd{color:var(--gold-l);font-size:1.1rem}
+.summary-flag{display:block;margin:.7rem 0 0;text-align:center;width:100%;background:transparent;border-color:#d4a94e66;color:var(--gold-l)}
+.book-steps{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1rem;padding:0}
+.book-steps li{display:flex;align-items:center;gap:.4rem;color:var(--muted);font-size:.82rem;font-weight:600}
+.book-steps li span{width:1.55rem;height:1.55rem;border-radius:50%;display:grid;place-items:center;background:#e8e4da;color:var(--navy);font-size:.8rem}
+.book-steps li.is-current{color:var(--navy)}
+.book-steps li.is-current span{background:var(--gold);color:var(--navy-d)}
+.book-steps li.is-done{color:var(--navy)}
+.book-steps li.is-done span{background:var(--navy);color:#fff}
+.book-form{gap:1rem}
+.book-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.2rem}
+.book-actions .btn{flex:1 1 140px}
+.book-avail{font-weight:700;font-size:.95rem;padding:.75rem 1rem;border-radius:10px}
+.book-avail.is-ok{background:#e8f6ee;color:#0d5c32}
+.book-avail.is-soldout{background:#fdecea;color:#b42318}
+.optional{font-weight:500;color:var(--muted);font-size:.85rem}
+.pay-demo-note{background:#fff6d8;border:1px solid #e6d7b0;border-radius:10px;padding:.75rem .9rem;font-size:.92rem;color:var(--navy-d);font-weight:600}
+.pay-methods{border:1.5px solid #d6d9e0;border-radius:12px;padding:.9rem 1rem;display:grid;gap:.45rem}
+.pay-methods legend{font-weight:700;color:var(--navy);padding:0 .3rem}
+.pay-option{display:flex;align-items:center;gap:.6rem;font-weight:600;font-size:.95rem;color:var(--navy);min-height:44px;cursor:pointer}
+.pay-option input{width:1.15rem;height:1.15rem;accent-color:var(--navy)}
+.pay-fields{display:grid;gap:.9rem}
+.book-pay-status{font-weight:700;color:var(--navy)}
+.confirm-card{border-top:4px solid var(--gold);text-align:left}
+.confirm-check{width:56px;height:56px;border-radius:50%;background:#e8f6ee;color:#0d5c32;display:grid;place-items:center;font-size:1.8rem;font-weight:700;margin-bottom:.8rem}
+.confirm-ref{font-size:1.15rem;margin:.8rem 0;color:var(--navy)}
+.confirm-ref strong{font-family:Georgia,serif;letter-spacing:.06em}
+.confirm-dl{display:grid;gap:.15rem;margin:1.1rem 0 1.4rem;background:var(--sand);border-radius:12px;padding:.4rem 1rem}
+.confirm-dl div{display:flex;justify-content:space-between;gap:1rem;padding:.65rem 0;border-bottom:1px solid #e4dccb}
+.confirm-dl div:last-child{border-bottom:0}
+.confirm-dl dt{font-weight:700;color:var(--navy)}
+.confirm-dl dd{text-align:right}
+.enquiry-alt{margin-top:1.6rem;background:#fff;border:1.5px solid #e4dccb;border-radius:var(--r);padding:.4rem 1.1rem 1.1rem}
+.enquiry-alt summary{cursor:pointer;font-weight:700;color:var(--navy);padding:.8rem 0;list-style:none}
+.enquiry-alt summary::-webkit-details-marker{display:none}
+.enquiry-alt summary::after{content:"＋";float:right;color:var(--gold);font-weight:700}
+.enquiry-alt[open] summary::after{content:"–"}
+.enquiry-alt .form{margin-top:.6rem;box-shadow:none;padding:0;border-top:0}
+
+/* print confirmation */
+@media print{
+  .nav,.wa-float,.hero,#about,#rooms,#amenities,#conference,#gallery,#location,#contact,.footer,
+  .book-steps,.enquiry-alt,.demo-banner,.booking-aside,.book-form,.menu-btn,.skip{display:none!important}
+  body{background:#fff;color:#000}
+  #booking{padding:0}
+  .booking-layout{display:block}
+  .confirm-card{box-shadow:none;border:0;padding:0}
+  .confirm-card .book-actions{display:none}
+  .confirm-check{box-shadow:none}
+}
+
+@media(max-width:639px){
+  .row2{grid-template-columns:1fr}
+  .book-steps{justify-content:space-between}
+  .book-steps li{font-size:0;gap:0}
+  .book-steps li span{font-size:.8rem}
+  .book-steps li.is-current{font-size:.82rem;gap:.4rem}
+  .room-foot{flex-direction:column;align-items:flex-start}
+}
+
+#booking,#book-confirm,.book-step{scroll-margin-top:80px}
+@media(max-width:899px){
+  .booking-panel{order:1}
+  .booking-aside{order:2}
+  .booking-layout{display:flex;flex-direction:column}
+}
+.confirm-card{position:relative;z-index:1}
